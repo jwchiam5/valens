@@ -5,8 +5,8 @@ const ValentinePrompt = () => {
     const [noClickCount, setNoClickCount] = useState(0);
     const [yesScale, setYesScale] = useState(1);
     const [noScale, setNoScale] = useState(1);
-    const [yesFontSize, setYesFontSize] = useState(1.3);
-    const [noFontSize, setNoFontSize] = useState(1.3);
+    const [yesFontSize, setYesFontSize] = useState(1.2);
+    const [noFontSize, setNoFontSize] = useState(1.2);
     const [response, setResponse] = useState('');
     const [responseType, setResponseType] = useState('');
     const [showButtons, setShowButtons] = useState(true);
@@ -42,7 +42,7 @@ const ValentinePrompt = () => {
 
     const handleYes = () => {
         createConfetti();
-        setResponse('🎉 Yay! You made my day! I love you so much! 💕✨');
+        setResponse('🎉 Yayyy I love uuu, dun sad alr kayss 💕');
         setResponseType('yes-response');
         setShowButtons(false);
     };
@@ -52,7 +52,7 @@ const ValentinePrompt = () => {
         setNoClickCount(newClickCount);
 
         // Increase YES button size and decrease NO button size
-        const newYesFontSize = 1.2 + (newClickCount * 0.3);
+        const newYesFontSize = 0.8 + (newClickCount * 0.2);
         const newYesScale = 1 + (newClickCount * 0.2);
         const newNoFontSize = Math.max(0.5, 1.2 - (newClickCount * 0.2));
         const newNoScale = Math.max(0.3, 1 - (newClickCount * 0.15));

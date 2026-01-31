@@ -158,6 +158,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   animation: slide-up 0.8s ease-out 0.9s backwards;
+  margin-bottom: 60px; /* add space for below buttons */
 }
 
 @keyframes slide-up {
@@ -237,6 +238,8 @@ button span {
   font-size: 1.5em;
   font-weight: 400;
   animation: celebration 0.6s ease-out;
+  position: relative;
+  z-index: 10;
 }
 
 @keyframes celebration {

@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/valens/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    // assetsDir: 'assets',
   },
   server: {
     port: 3000
